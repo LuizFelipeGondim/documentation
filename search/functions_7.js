@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['instantiationhelper_0',['instantiationHelper',['../namespacedoctest_1_1detail.html#aad401b097a9af4df1d4a9d0911957c0f',1,'doctest::detail']]],
-  ['isanypossibleplay_1',['isAnyPossiblePlay',['../class_reversi.html#a0a5086f3486110c0219e353678a17048',1,'Reversi']]],
-  ['isboardfull_2',['isBoardFull',['../class_game.html#aa7c17e23b2a57c0ce8fc685d29f842f2',1,'Game::isBoardFull()'],['../class_reversi.html#a988b41f810cc8e97bfc832a4a073572c',1,'Reversi::isBoardFull()']]],
-  ['isdebuggeractive_3',['isDebuggerActive',['../namespacedoctest_1_1detail.html#a013828c4e677241cc26aeea33f762710',1,'doctest::detail']]],
-  ['isnan_4',['IsNaN',['../structdoctest_1_1_is_na_n.html#a47f3957c504f7d8bc40dd4014cce5ee1',1,'doctest::IsNaN']]]
+  ['searchplayer_0',['searchPlayer',['../class_game_board.html#a1a5f59db4c945df6f3feae24097b244c',1,'GameBoard']]],
+  ['setdefeats_1',['setDefeats',['../class_player.html#a455f8a59257397b76e35ba75fea6176e',1,'Player']]],
+  ['setvictories_2',['setVictories',['../class_player.html#af3f9bf0b1eebbe443576f1a98ac73732',1,'Player']]],
+  ['showstatistics_3',['showStatistics',['../class_player.html#a45dd63c7d6958aa2e15cb021491e90a4',1,'Player']]],
+  ['startgame_4',['startGame',['../class_game_board.html#ace5b7d1428b77ae64544e381d2ac40ef',1,'GameBoard']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unary_5fassert_0',['unary_assert',['../structdoctest_1_1detail_1_1_result_builder.html#a63a2a19638f4a761c70abd5563e2d23a',1,'doctest::detail::ResultBuilder::unary_assert()'],['../namespacedoctest_1_1detail.html#a0ffd8b760c2a9b355a1df02470fe2281',1,'doctest::detail::unary_assert()']]],
-  ['underlying_5ftype_1',['underlying_type',['../structdoctest_1_1detail_1_1types_1_1underlying__type.html',1,'doctest::detail::types']]]
+  ['x_0',['3 | O |   | X |',['../md__projeto_final-main_2_r_e_a_d_m_e.html#autotoc_md8',1,'']]],
+  ['x_202_20o_202_1',['|      X = 2      |      O = 2      |',['../md__projeto_final-main_2_r_e_a_d_m_e.html#autotoc_md5',1,'']]],
+  ['x_20o_2',['| X | O |   |   |   |   |',['../md__projeto_final-main_2_r_e_a_d_m_e.html#autotoc_md6',1,'']]]
 ];

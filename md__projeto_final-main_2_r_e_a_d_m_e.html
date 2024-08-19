@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ProjetoFinal: README</title>
+<title>Jogos de Tabuleiro: Projeto Final - Jogos de tabuleiro</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="capivara.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ProjetoFinal
+   <div id="projectname">Jogos de Tabuleiro
    </div>
-   <div id="projectbrief">Projeto da Disciplina Programação é Desenvolvimento de Sotware 2</div>
+   <div id="projectbrief">Projeto da Disciplina Programação Desenvolvimento de Software 2</div>
   </td>
  </tr>
  </tbody>
@@ -86,49 +86,173 @@ $(function(){ initResizable(false); });
 </div><!-- top -->
 <div id="doc-content">
 <div><div class="header">
-  <div class="headertitle"><div class="title">README</div></div>
+  <div class="headertitle"><div class="title">Projeto Final - Jogos de tabuleiro</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Jogo de Tabuleiro em C++<br  />
- Visão Geral do Projeto<br  />
- Este projeto implementa um conjunto de jogos de tabuleiro clássicos utilizando C++, permitindo que dois jogadores se enfrentem em uma partida. Os jogos disponíveis incluem:<br  />
-</p>
-<p>Tic Tac Toe (Jogo da Velha)<br  />
- <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a><br  />
- Connect Four (LIG4)<br  />
-</p>
-<p>Cada jogo foi estruturado fazendo uso de herança e polimorfismos para facilitar a reutilização de código e garantir uma fácil extensão para outros jogos futuros.<br  />
-</p>
-<p>Estrutura do Projeto<br  />
-</p>
-<p>A estrutura do projeto é modular, com classes específicas para cada jogo derivadas de uma classe base <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a> que por sua vez é derivada da classe player. A classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a> gerencia a interface com os jogadores e controla o fluxo geral do programa.<br  />
- Principais Arquivos:<br  />
- <a class="el" href="_player_8hpp.html">Player.hpp</a>/cpp: Armazena e gerencia quaisquer dados relacionados aos jogadores.<br  />
- <a class="el" href="_game_8hpp.html">Game.hpp</a>/cpp: Define a classe abstrata base para os jogos, incluindo a lógica comum para todos os jogos, como a criação e impressão do tabuleiro e verificação de preenchimento do tabuleiro.<br  />
- <a class="el" href="_game_board_8hpp.html">GameBoard.hpp</a>/cpp: Controla o registro dos jogadores, a leitura/escrita de dados dos jogadores em arquivos, e o início das partidas entre jogadores.<br  />
- <a class="el" href="_tic_tac_toe_8hpp.html">TicTacToe.hpp</a>/cpp: Implementa o jogo Tic Tac Toe, incluindo a lógica para verificar vitórias e processar jogadas.<br  />
- <a class="el" href="_reversi_8hpp.html">Reversi.hpp</a>/cpp: Implementa o jogo <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a>, com métodos específicos para gerenciar as regras de captura de peças e contagem de peças no tabuleiro.<br  />
- <a class="el" href="_connect_four_8hpp.html">ConnectFour.hpp</a>/cpp: Implemeta o jogo Connect Four, com metodos especificos para gerenciar as condiçoes de vitoria e jogada validas<br  />
-</p>
-<p>Principais Desafios<br  />
-</p>
-<p>Alguns dos desafios enfrentados no desenvolvimento deste projeto incluem:<br  />
-</p>
-<p>Gerenciamento da Herança: Garantir que a classe base <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a> fornecesse uma estrutura suficientemente flexível para suportar a lógica variada dos diferentes jogos.<br  />
- Implementação da Lógica de Jogo: Cada jogo possui regras e condições de vitória específicas, o que exigiu um cuidado especial para implementar métodos como checkWin (Tic Tac Toe)/(<a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a>) e thereIsConnection (<a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a>).<br  />
- Persistência de Dados: A leitura e escrita das informações dos jogadores em arquivos foi um ponto que exigiu atenção para garantir que os dados fossem armazenados corretamente entre as execuções do programa.<br  />
- Implementação dos Testes: Pensar em todas as possiveis formas de teste do programa foi uma tarefa ardiosa e que requeriu uma grande quantidade de tempo.<br  />
- Implementação das Funçoes Extras: Foi partircularmente dificil encontrar logicas para a contador de possiveis vitorias no Connectfour.<br  />
-</p>
-<p>Funcionalidades Extras<br  />
-</p>
-<p>Além das funcionalidades básicas, algumas características extras foram implementadas:<br  />
-</p>
-<p>Contador de Possiveis Formas de Ganhar: No jogo <a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a> foi criado um contador de "possiveis formas de ganhar", ele conta todas as possiveis linhas em que um jogador consegue conectar 4 peças, com seu valor sendo alterado conforme mais peças são jogadas.<br  />
- Escolha de Tamanho de Tabuleiro: No jogo <a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a> o jogador é dada a escolha de 3 diferentes tamanhos de tabuleiro para jogar.<br  />
- Contador de Peças: No jogo <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a> foi criado um contador para as peças de ambos os jogadores, com o intuito de facilitar o entendimento de quem esta ganhando a partida.<br  />
- Tic Tac Toe: Também foi criado um terceiro jogo extra, o classico Tic Tac Toe ou como é conhecido no Brasil, Jogo da Velha.<br  />
- </p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> Este projeto implementa um conjunto de jogos de tabuleiro clássicos utilizando C++, permitindo que dois jogadores se enfrentem em uma partida. Os jogos disponíveis incluem:</p>
+<ul>
+<li>Tic Tac Toe (Jogo da Velha)</li>
+<li><a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a></li>
+<li>Connect Four (Lig4)</li>
+</ul>
+<p>Cada jogo foi estruturado fazendo uso de herança e polimorfismo para facilitar a reutilização de código e garantir uma fácil extensão para outros jogos futuros. Para mais, ainda foi desenvolvido um sistema de cadastro e gerenciamento de jogadores.</p>
+<blockquote class="doxtable">
+<p>&zwj;<a href="https://luizfelipegondim.github.io/documentation/">Clique aqui para ter acesso à documentação</a> </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Como iniciar o projeto?</h1>
+<p>Para iniciar o programa no seu computador, utilize os seguintes comandos:</p>
+<ol type="1">
+<li>Instale o software <em>make</em> caso não tenha instalado na sua máquina;</li>
+<li>Em seguida, clone o repositório e o acesse pelo terminal;</li>
+<li>Compile o código digitando <b>make</b> no terminal;</li>
+<li>Para executar o código compilado, digite <b>bin/./start_game</b>;</li>
+<li>Para executar os testes, digite <b>make test</b>;</li>
+<li>Para limpar os arquivos compilados, digite <b>make clean</b>.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Estrutura do Projeto</h1>
+<p>A estrutura do projeto é modular, com classes específicas para cada jogo derivadas da classe base <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a>. A classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a> gerencia a interface com os jogadores e controla o fluxo geral do programa. Principais Arquivos:</p>
+<ul>
+<li><b><a class="el" href="_player_8hpp_source.html">Player.hpp</a>/cpp:</b> Armazena e gerencia quaisquer dados relacionados aos jogadores.</li>
+<li><b><a class="el" href="_game_8hpp_source.html">Game.hpp</a>/cpp:</b> Define a classe abstrata base para os jogos, incluindo a lógica comum para todos os jogos, como a criação e a impressão do tabuleiro e verificação de preenchimento do tabuleiro.</li>
+<li><b><a class="el" href="_game_board_8hpp_source.html">GameBoard.hpp</a>/cpp:</b> Controla o registro dos jogadores, a leitura/escrita de dados dos jogadores em arquivos, e o início das partidas entre jogadores.</li>
+<li><b><a class="el" href="_tic_tac_toe_8hpp_source.html">TicTacToe.hpp</a>/cpp:</b> Implementa o jogo Tic Tac Toe, incluindo a lógica para verificar vitórias e processar jogadas.</li>
+<li><b><a class="el" href="_reversi_8hpp_source.html">Reversi.hpp</a>/cpp:</b> Implementa o jogo <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a>, com métodos específicos para gerenciar as regras de captura de peças e contagem de peças no tabuleiro.</li>
+<li><b><a class="el" href="_connect_four_8hpp_source.html">ConnectFour.hpp</a>/cpp:</b> Implementa o jogo Connect Four, com métodos específicos para gerenciar as condições de vitoria e jogada válidas</li>
+</ul>
+<p>Ademais, o projeto também é composto pelos arquivos de teste que são responsáveis por testar cada classe e suas funcionalidades.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Fluxo do software</h1>
+<p>Nessa seção iremos apresentar como o software funciona para o usuário final. É importante destacar que não foi utilizada uma interface gráfica para a sua execução, sendo feita apenas o uso do terminal do sistema operacional.</p>
+<ol type="1">
+<li>O software inicia sua execução lendo os jogadores que foram cadastrados previamente no arquivo players.txt. Caso esse arquivo ainda não exista, uma mensagem será emitida avisando sobre isso e continuará a execução do programa. Em seguida, o menu de opções será apresentado.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; Erro na leitura do arquivo: players.txt Iniciando o sistema com nenhum jogador cadastrado.</p>
+<p>Escolha uma opção para interagir com o tabuleiro: CJ - Cadastrar jogador RJ - Remover jogador LJ - Listar jogadores EP - Entrar na partida FS - Sair do tabuleiro </p>
+</blockquote>
+<ol type="1">
+<li><b>CJ - Cadastrar jogador:</b> Essa opção é utilizada para cadastrar um jogador no sistema solicitando o apelido e o nome ao usuário. Caso esse apelido já tenha sido cadastrado, ocorrerá um erro e o programa voltará para o menu de opções.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; //Caso de sucesso CJ Informe o apelido e o nome do jogador, respectivamente: Joao Carlos Jogador Joao cadastrado com sucesso!</p>
+<p>//Caso de falha CJ <br  />
+ Informe o apelido e o nome do jogador, respectivamente: Luiz Felipe ERRO: Jogador existente! </p>
+</blockquote>
+<ol type="1">
+<li><b>RJ - Remover jogador:</b> Esta opção irá remover o jogador que possui o apelido informado. Caso este jogador não exista, aparecerá uma mensagem de erro.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; //Caso de sucesso RJ Informe o apelido do jogador a ser removido: Gabriel Jogador Gabriel removido com sucesso!</p>
+<p>//Caso de falha RJ <br  />
+ Informe o apelido do jogador a ser removido: Fulano ERRO: Jogador não encontrado! </p>
+</blockquote>
+<ol type="1">
+<li><b>LJ - Listar jogadores:</b> Esta função irá listar os jogadores cadastrados considerando a ordem informada. É apresentado o apelido, o nome e informações de vitórias/derrotas de cada jogo da aplicação.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; LJ Informe um método de ordenação: [Apelido|Nome] TESTE ERRO: Informe um método de ordenação válido: [Apelido|Nome] nome</p>
+<p>Joao Carlos REVERSI - V: 0 D: 0 LIG4 - V: 0 D: 0 TICTACTOE - V: 0 D: 0</p>
+<p>Luiz Felipe REVERSI - V: 0 D: 0 LIG4 - V: 0 D: 0 TICTACTOE - V: 0 D: 0 </p>
+</blockquote>
+<ol type="1">
+<li><b>EP - Entrar na partida:</b> Esta função é utilizada para iniciar um dos três jogos. O usuário deve escolher qual jogo será executado e em seguida informar os dois jogadores que irão participar da partida.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; EP Informe o jogo: [Reversi|Lig4|TicTacToe] Minecraft ERRO:Informe um jogo válido: [Reversi|Lig4|TicTacToe] Lig4 Informe o apelido do primeiro jogador: Luiz Informe o apelido do segundo jogador: Joao </p>
+</blockquote>
+<ol type="1">
+<li><b>FS - Sair do tabuleiro:</b> Ao pressionar ctrl+D ou digitar FS no menu de opções, o programa será finalizado, salvando todos os jogadores no arquivo players.txt. Lembrando que se ele for finalizado de forma abrupta, com ctrl+D, uma mensagem de erro irá aparecer.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; FS Finalizando o tabuleiro... </p>
+</blockquote>
+<ol type="1">
+<li><b><a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a>:</b> O jogo <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a> irá apresentar o seguinte tabuleiro a cada jogada realizada (linha, coluna) alternando os jogadores, mostrando o contador de peças logo abaixo. Caso seja informada uma coordenada que não obedeça as regras do jogo ou que ultrapasse o tamanho do tabuleiro, uma mensagem de erro será impressa e o jogador terá uma nova chance para jogar. Além desses casos, pode ocorrer a situação onde um jogador não tenha posições possíveis para jogar, então passará a vez. O fim da partida ocorre quando não há mais espaços a serem preenchidos no tabuleiro ou algum jogador perca todas as peças, sendo assim, o jogador com mais peças ganha. O número -1 pode ser impresso para desistência.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; 1 2 3 4 5 6 7 8 <br  />
+ 1 | | | | | | | | | 2 | | | | | | | | | 3 | | | | | | | | | 4 | | | | X | O | | | | 5 | | | | O | X | | | | 6 | | | | | | | | | 7 | | | | | | | | | </p>
+</blockquote>
+<h2><a class="anchor" id="autotoc_md4"></a>
+8 | | | | | | | | |</h2>
+<h2><a class="anchor" id="autotoc_md5"></a>
+| X = 2 | O = 2 |</h2>
+<p>Luiz (X), faça sua jogada (linha e coluna):</p>
+<p>1 2 ERRO: Não tem peça oposta adjacente. Vez de Luiz jogar(X):</p>
+<p>1 9 ERRO: Posição fora dos limites do tabuleiro! Vez de Luiz jogar(X):</p>
+<p>-1 Luiz desistiu, vitória de Joao.</p>
+<p>//Vitória sem desistência Parabéns Joao! Você venceu!</p>
+<p>//Empate O jogo terminou em empate!</p>
+<p>//Um jogador não possui coordenadas para jogar Nao há jogadas possíveis para o(a) jogador(a) Luiz </p>
+<ol type="1">
+<li><b>Lig4:</b> O jogo será iniciado com uma lista de possíveis tamanhos para o tabuleiro na qual uma deve ser selecionada. Logo em seguida, será apresentado o tabuleiro que receberá o número de uma coluna para efetuar a jogada dos jogadores de forma alternada. Caso seja informada uma coluna que não obedeça as regras do jogo ou que ultrapasse o tamanho do tabuleiro, uma mensagem de erro será impressa e o jogador terá uma nova chance para jogar. Ganha quem formar um quarteto primeiro (vertical, horizontal ou diagonal), caso isso não aconteça, a partida terminará em empate. Para mais, a cada interação, será mostrado acima do tabuleiro a quantidade de formas que o jogador corrente pode ganhar.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; Escolha o tamanho do Tabuleiro:</p><ol type="1">
+<li>5x6</li>
+<li>6x7</li>
+<li>7x8 Digite o número da opção desejada: 1</li>
+</ol>
+<p>Possíveis formas de ganhar para X: 0 1 2 3 4 5 6 <br  />
+ </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+</table>
+<hr  />
+<p> Turno de Luiz (X): 8 ERRO:Posição fora dos limites do tabuleiro!</p>
+<p>//Erro de coluna Coluna cheia. Tente novamente!</p>
+<p>//Vitória Possíveis formas de ganhar para X: 3 1 2 3 4 5 6 <br  />
+ | | | | | | | | X | | | | | | | X | O | | | | | | X | O | | | | | </p>
+</blockquote>
+<h2><a class="anchor" id="autotoc_md6"></a>
+| X | O | | | | |</h2>
+<p>Parabéns Luiz! Você venceu!</p>
+<p>//Empate O jogo terminou em empate! </p>
+<ol type="1">
+<li><b>Tic Tac Toe:</b> O jogo Tic Tac Toe mostrará o seguinte tabuleiro a cada jogada realizada (linha, coluna) alternando os jogadores. Caso seja informada uma coordenada que não obedeça as regras do jogo ou que ultrapasse o tamanho do tabuleiro, uma mensagem de erro será impressa e o jogador terá uma nova chance para jogar. Ganha quem fizer uma sequência de três primeiro símbolos primeiro, caso isso não aconteça, a partida terminará em empate.</li>
+</ol>
+<blockquote class="doxtable">
+<p>&zwj; 1 2 3 <br  />
+ 1 | | | | 2 | | | | </p>
+</blockquote>
+<h2><a class="anchor" id="autotoc_md7"></a>
+3 | | | |</h2>
+<p>Luiz (X), faça sua jogada (linha e coluna):</p>
+<p>//Erro Movimento inválido! Tente novamente.</p>
+<p>//Vitória 1 2 3 <br  />
+ 1 | X | | X | 2 | O | O | X | </p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+3 | O | | X |</h2>
+<p>Parabéns Joao! Você venceu!</p>
+<p>//Empate O jogo terminou em empate! </p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+Principais Desafios</h1>
+<p>Alguns dos desafios enfrentados no desenvolvimento deste projeto incluem:</p>
+<ul>
+<li><b>Gerenciamento da Herança:</b> Garantir que a classe base <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a> fornecesse uma estrutura suficientemente flexível para suportar a lógica variada dos diferentes jogos.</li>
+<li><b>Implementação da Lógica de Jogo:</b> Cada jogo possui regras e condições de vitória específicas, o que exigiu um cuidado especial para implementar métodos como checkWin (Tic Tac Toe)/(<a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a>) e thereIsConnection (<a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a>).</li>
+<li><b>Persistência de Dados:</b> A leitura e escrita das informações dos jogadores em arquivos foi um ponto que exigiu atenção para garantir que os dados fossem armazenados corretamente entre as execuções do programa.</li>
+<li><b>Implementação dos Testes:</b> Pensar em todas as possíveis formas de teste do programa foi uma tarefa árdua e que requereu uma grande quantidade de tempo.</li>
+<li><b>Implementação das Funções Extras:</b> Foi particularmente difícil encontrar logicas para a contador de possíveis vitorias no <a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a>, por exemplo.</li>
+<li><b>Vazamento de memória:</b> Foi necessário a utilização da ferramenta Valgrind para encontrar e resolver problemas relacionados ao acesso de memória de maneira indevida.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Funcionalidades Extras</h1>
+<p>Além das funcionalidades básicas, algumas características extras foram implementadas:</p>
+<ol type="1">
+<li><b>Contador de Possíveis Formas de Ganhar:</b> No jogo <a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a> foi criado um contador de "possíveis formas de ganhar", ele conta todas as possíveis linhas em que um jogador consegue conectar 4 peças, com seu valor sendo alterado conforme mais peças são jogadas.</li>
+<li><b>Escolha de Tamanho de Tabuleiro:</b> No jogo <a class="el" href="class_connect_four.html" title="Classe que representa o jogo Conecta 4.">ConnectFour</a> o jogador é dada a escolha de 3 diferentes tamanhos de tabuleiro para jogar.</li>
+<li><b>Contador de Peças:</b> No jogo <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a> foi criado um contador para as peças de ambos os jogadores, com o intuito de facilitar o entendimento de quem esta ganhando a partida.</li>
+<li><b>Tic Tac Toe:</b> Também foi criado um terceiro jogo extra, o clássico Tic Tac Toe ou como é conhecido no Brasil, Jogo da Velha. </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['epsilon_0',['epsilon',['../structdoctest_1_1_approx.html#a3a9093777280fcf5fd79e79b1c202ba8',1,'doctest::Approx']]],
-  ['exceptiontranslator_1',['ExceptionTranslator',['../classdoctest_1_1detail_1_1_exception_translator.html#a3ac05488993c40c6ba55ce51a6bf7eae',1,'doctest::detail::ExceptionTranslator']]],
-  ['expression_5flhs_2',['Expression_lhs',['../structdoctest_1_1detail_1_1_expression__lhs.html#ab5d05d371e81dd7724592174afbfeba1',1,'doctest::detail::Expression_lhs']]],
-  ['expressiondecomposer_3',['ExpressionDecomposer',['../structdoctest_1_1detail_1_1_expression_decomposer.html#a6bf2c46ebf0dc68106be801a90776e65',1,'doctest::detail::ExpressionDecomposer']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['makemove_1',['makeMove',['../class_connect_four.html#a46bab67c53439a5f9c46fef422f9d475',1,'ConnectFour::makeMove()'],['../class_reversi.html#a0ec190b935ed65f327eabab4089fb2ae',1,'Reversi::makeMove()'],['../class_tic_tac_toe.html#a3fc98941ec96b37afb5d1f666f9aafc5',1,'TicTacToe::makeMove()']]],
+  ['match_2',['match',['../class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee',1,'ConnectFour::match()'],['../class_game.html#a00e4c86486c3c12720baefbbfbaf5849',1,'Game::match()'],['../class_reversi.html#ae676a0416b0daf14e1716accc2cd5675',1,'Reversi::match()'],['../class_tic_tac_toe.html#aae47031606d060cdae7210ddd8ac4643',1,'TicTacToe::match()']]]
 ];

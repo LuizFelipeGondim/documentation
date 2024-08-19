@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ProjetoFinal: Reversi Class Reference</title>
+<title>Jogos de Tabuleiro: Reversi Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="capivara.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ProjetoFinal
+   <div id="projectname">Jogos de Tabuleiro
    </div>
-   <div id="projectbrief">Projeto da Disciplina Programação é Desenvolvimento de Sotware 2</div>
+   <div id="projectbrief">Projeto da Disciplina Programação Desenvolvimento de Software 2</div>
   </td>
  </tr>
  </tbody>
@@ -97,8 +97,15 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_reversi_8hpp_source.html">Reversi.hpp</a>&gt;</code></p>
-
-<p>Inherits <a class="el" href="class_game.html">Game</a>.</p>
+<div class="dynheader">
+Inheritance diagram for Reversi:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_reversi.png" usemap="#Reversi_map" alt=""/>
+  <map id="Reversi_map" name="Reversi_map">
+<area href="class_game.html" title="Classe base abstrata que representa um jogo genérico." alt="Game" shape="rect" coords="0,0,55,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -133,8 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game" id="r_ab9fc5f2ec8a74c25149e8fe4a33f724c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c">Game</a> (int rows, int cols)</td></tr>
 <tr class="memdesc:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a>.  <br /></td></tr>
 <tr class="separator:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0556d428e8db075b405355af7e81dae inherit pub_methods_class_game" id="r_ab0556d428e8db075b405355af7e81dae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ab0556d428e8db075b405355af7e81dae">~Game</a> ()=default</td></tr>
-<tr class="memdesc:ab0556d428e8db075b405355af7e81dae inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual padrão.  <br /></td></tr>
+<tr class="memitem:ab0556d428e8db075b405355af7e81dae inherit pub_methods_class_game" id="r_ab0556d428e8db075b405355af7e81dae"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Game</b> ()=default</td></tr>
+<tr class="memdesc:ab0556d428e8db075b405355af7e81dae inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual padrão. <br /></td></tr>
 <tr class="separator:ab0556d428e8db075b405355af7e81dae inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a1b5a5eb2afe2a96c466bc495d994b inherit pub_methods_class_game" id="r_aa9a1b5a5eb2afe2a96c466bc495d994b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aa9a1b5a5eb2afe2a96c466bc495d994b">printBoard</a> () const</td></tr>
 <tr class="memdesc:aa9a1b5a5eb2afe2a96c466bc495d994b inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o estado atual do tabuleiro.  <br /></td></tr>
@@ -214,7 +222,13 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>O conteúdo da posição no tabuleiro.</dd></dl>
-<p>O método é usado nos casos de teste do <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a> para verificar jogadas específicas.</p>
+<p>O método é usado nos casos de teste do <a class="el" href="class_reversi.html" title="Essa classe representa o jogo Reversi.">Reversi</a> para verificar jogadas específicas. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>Número de linhas do tabuleiro. </td></tr>
+    <tr><td class="paramname">col</td><td>Número de colunas do tabuleiro. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>O conteúdo da posição no tabuleiro. </dd></dl>
 
 </div>
@@ -240,6 +254,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Checa se existe alguma jogada possível. </p>
 <p>Verifica se há alguma jogada possível.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">turn</td><td>Representa a peça do jogador. </td></tr>
+    <tr><td class="paramname">watching</td><td>Representa a peça do outro jogador. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true se tem alguma jogada possível, false se não tem.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -317,7 +338,9 @@ true se o tabuleiro está cheio, false caso contrário. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rows</td><td>A linha de sua jogada. </td></tr>
-    <tr><td class="paramname">cols</td><td>A coluna de sua jogada.</td></tr>
+    <tr><td class="paramname">cols</td><td>A coluna de sua jogada. </td></tr>
+    <tr><td class="paramname">turn</td><td>Representa a peça do jogador. </td></tr>
+    <tr><td class="paramname">watching</td><td>Representa a peça do outro jogador.</td></tr>
     <tr><td class="paramname">rows</td><td>Linha onde a peça será colocada. </td></tr>
     <tr><td class="paramname">cols</td><td>Coluna onde a peça será colocada. </td></tr>
     <tr><td class="paramname">turn</td><td>Peça do jogador atual. </td></tr>
@@ -387,7 +410,7 @@ true se o tabuleiro está cheio, false caso contrário. </dd></dl>
 </div><div class="memdoc">
 
 <p>Atualiza o contador de peças X e O. </p>
-<p>Conta o número de peças de cada jogador no tabuleiro. </p>
+<p>Conta o número de peças de cada jogador no tabuleiro e mostra. </p>
 
 </div>
 </div>
@@ -426,6 +449,8 @@ true se o tabuleiro está cheio, false caso contrário. </dd></dl>
   <table class="params">
     <tr><td class="paramname">rows</td><td>A linha da peça que precisa ser verificada. </td></tr>
     <tr><td class="paramname">cols</td><td>A coluna da peça que precisa ser verificada. </td></tr>
+    <tr><td class="paramname">turn</td><td>Representa a peça do jogador. </td></tr>
+    <tr><td class="paramname">watching</td><td>Representa a peça do outro jogador. </td></tr>
   </table>
   </dd>
 </dl>
@@ -473,6 +498,7 @@ true se o tabuleiro está cheio, false caso contrário. </dd></dl>
   <table class="params">
     <tr><td class="paramname">rows</td><td>A linha onde a peça vai ser jogada após a verificação. </td></tr>
     <tr><td class="paramname">cols</td><td>A coluna onde a peça vai ser jogada após a verificação. </td></tr>
+    <tr><td class="paramname">watching</td><td>Representa a peça do outro jogador. </td></tr>
   </table>
   </dd>
 </dl>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ProjetoFinal: ProjetoFinal-main/include/ConnectFour.hpp Source File</title>
+<title>Jogos de Tabuleiro: ProjetoFinal-main/include/ConnectFour.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="capivara.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ProjetoFinal
+   <div id="projectname">Jogos de Tabuleiro
    </div>
-   <div id="projectbrief">Projeto da Disciplina Programação é Desenvolvimento de Sotware 2</div>
+   <div id="projectbrief">Projeto da Disciplina Programação Desenvolvimento de Software 2</div>
   </td>
  </tr>
  </tbody>
@@ -93,10 +93,10 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ConnectFour.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_connect_four_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONNECTFOUR_HPP</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONNECTFOUR_HPP</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONNECTFOUR_HPP</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_game_8hpp.html">Game.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Game.hpp&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
@@ -104,39 +104,38 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_connect_four.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_connect_four.html">ConnectFour</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_game.html">Game</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> checkHorizontal(std::string currentPiece) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> checkVertical(std::string currentPiece) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> checkDiagonal(std::string currentPiece) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> isValidMove(<span class="keywordtype">int</span> col) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> printBoard() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="class_connect_four.html#acf523d971031cdb86967a65798722b45">ConnectFour</a>(<span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> cols);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_connect_four.html#abc8fab6f382397ac135c1dc85827cac9">countPossibleWins</a>(std::string currentPiece) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_connect_four.html#a131d3c630c382abe8fd825f58dde98c2">checkWin</a>(std::string currentPiece) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_connect_four.html#a46bab67c53439a5f9c46fef422f9d475">makeMove</a>(<span class="keywordtype">int</span> col, std::string currentPiece);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">match</a>(<a class="code hl_class" href="class_player.html">Player</a>* player1, <a class="code hl_class" href="class_player.html">Player</a>* player2) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">bool</span> checkHorizontal(std::string currentPiece) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> checkVertical(std::string currentPiece) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">bool</span> checkDiagonal(std::string currentPiece) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">bool</span> isValidMove(<span class="keywordtype">int</span> col) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> printBoard() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_connect_four.html#acf523d971031cdb86967a65798722b45">ConnectFour</a>(<span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> cols);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_connect_four.html#abc8fab6f382397ac135c1dc85827cac9">countPossibleWins</a>(std::string currentPiece) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_connect_four.html#a131d3c630c382abe8fd825f58dde98c2">checkWin</a>(std::string currentPiece) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_connect_four.html#a46bab67c53439a5f9c46fef422f9d475">makeMove</a>(<span class="keywordtype">int</span> col, std::string currentPiece);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">match</a>(<a class="code hl_class" href="class_player.html">Player</a>* player1, <a class="code hl_class" href="class_player.html">Player</a>* player2) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_game_8hpp_html"><div class="ttname"><a href="_game_8hpp.html">Game.hpp</a></div></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_connect_four_html"><div class="ttname"><a href="class_connect_four.html">ConnectFour</a></div><div class="ttdoc">Classe que representa o jogo Conecta 4.</div><div class="ttdef"><b>Definition</b> ConnectFour.hpp:11</div></div>
-<div class="ttc" id="aclass_connect_four_html_a08eb089373c0eea8510eb1fc6e1e36ee"><div class="ttname"><a href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">ConnectFour::match</a></div><div class="ttdeci">void match(Player *player1, Player *player2) override</div><div class="ttdoc">Executa uma partida entre dois jogadores.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:224</div></div>
-<div class="ttc" id="aclass_connect_four_html_a131d3c630c382abe8fd825f58dde98c2"><div class="ttname"><a href="class_connect_four.html#a131d3c630c382abe8fd825f58dde98c2">ConnectFour::checkWin</a></div><div class="ttdeci">bool checkWin(std::string currentPiece) const</div><div class="ttdoc">Verifica se o jogador atual ganhou.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:44</div></div>
-<div class="ttc" id="aclass_connect_four_html_a46bab67c53439a5f9c46fef422f9d475"><div class="ttname"><a href="class_connect_four.html#a46bab67c53439a5f9c46fef422f9d475">ConnectFour::makeMove</a></div><div class="ttdeci">bool makeMove(int col, std::string currentPiece)</div><div class="ttdoc">Faz uma jogada, colocando uma peça na coluna especificada.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:27</div></div>
-<div class="ttc" id="aclass_connect_four_html_abc8fab6f382397ac135c1dc85827cac9"><div class="ttname"><a href="class_connect_four.html#abc8fab6f382397ac135c1dc85827cac9">ConnectFour::countPossibleWins</a></div><div class="ttdeci">void countPossibleWins(std::string currentPiece) const</div><div class="ttdoc">Conta o número de possíveis formas de ganhar para o jogador atual.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:132</div></div>
+<div class="ttc" id="aclass_connect_four_html_a08eb089373c0eea8510eb1fc6e1e36ee"><div class="ttname"><a href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">ConnectFour::match</a></div><div class="ttdeci">void match(Player *player1, Player *player2) override</div><div class="ttdoc">Executa uma partida entre dois jogadores.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:230</div></div>
+<div class="ttc" id="aclass_connect_four_html_a131d3c630c382abe8fd825f58dde98c2"><div class="ttname"><a href="class_connect_four.html#a131d3c630c382abe8fd825f58dde98c2">ConnectFour::checkWin</a></div><div class="ttdeci">bool checkWin(std::string currentPiece) const</div><div class="ttdoc">Verifica se o jogador atual ganhou.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:46</div></div>
+<div class="ttc" id="aclass_connect_four_html_a46bab67c53439a5f9c46fef422f9d475"><div class="ttname"><a href="class_connect_four.html#a46bab67c53439a5f9c46fef422f9d475">ConnectFour::makeMove</a></div><div class="ttdeci">bool makeMove(int col, std::string currentPiece)</div><div class="ttdoc">Faz uma jogada, colocando uma peça na coluna especificada.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:28</div></div>
+<div class="ttc" id="aclass_connect_four_html_abc8fab6f382397ac135c1dc85827cac9"><div class="ttname"><a href="class_connect_four.html#abc8fab6f382397ac135c1dc85827cac9">ConnectFour::countPossibleWins</a></div><div class="ttdeci">void countPossibleWins(std::string currentPiece) const</div><div class="ttdoc">Conta o número de possíveis formas de ganhar para o jogador atual.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:138</div></div>
 <div class="ttc" id="aclass_connect_four_html_acf523d971031cdb86967a65798722b45"><div class="ttname"><a href="class_connect_four.html#acf523d971031cdb86967a65798722b45">ConnectFour::ConnectFour</a></div><div class="ttdeci">ConnectFour(int rows, int cols)</div><div class="ttdoc">Construtor da classe ConnectFour.</div><div class="ttdef"><b>Definition</b> ConnectFour.cpp:10</div></div>
 <div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdoc">Classe base abstrata que representa um jogo genérico.</div><div class="ttdef"><b>Definition</b> Game.hpp:11</div></div>
 <div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdoc">Classe que representa um jogador.</div><div class="ttdef"><b>Definition</b> Player.hpp:14</div></div>

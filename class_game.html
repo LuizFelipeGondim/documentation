@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ProjetoFinal: Game Class Reference</title>
+<title>Jogos de Tabuleiro: Game Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="capivara.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ProjetoFinal
+   <div id="projectname">Jogos de Tabuleiro
    </div>
-   <div id="projectbrief">Projeto da Disciplina Programação é Desenvolvimento de Sotware 2</div>
+   <div id="projectbrief">Projeto da Disciplina Programação Desenvolvimento de Software 2</div>
   </td>
  </tr>
  </tbody>
@@ -98,16 +98,26 @@ $(function(){ initResizable(false); });
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_game_8hpp_source.html">Game.hpp</a>&gt;</code></p>
-
-<p>Inherited by <a class="el" href="class_connect_four.html">ConnectFour</a>, <a class="el" href="class_reversi.html">Reversi</a>, <a class="el" href="class_test_game.html">TestGame</a>, and <a class="el" href="class_tic_tac_toe.html">TicTacToe</a>.</p>
+<div class="dynheader">
+Inheritance diagram for Game:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_game.png" usemap="#Game_map" alt=""/>
+  <map id="Game_map" name="Game_map">
+<area href="class_connect_four.html" title="Classe que representa o jogo Conecta 4." alt="ConnectFour" shape="rect" coords="0,56,86,80"/>
+<area href="class_reversi.html" title="Essa classe representa o jogo Reversi." alt="Reversi" shape="rect" coords="96,56,182,80"/>
+<area href="class_tic_tac_toe.html" title="Classe que representa o jogo Tic Tac Toe (Jogo da Velha)." alt="TicTacToe" shape="rect" coords="192,56,278,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9fc5f2ec8a74c25149e8fe4a33f724c" id="r_ab9fc5f2ec8a74c25149e8fe4a33f724c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9fc5f2ec8a74c25149e8fe4a33f724c">Game</a> (int rows, int cols)</td></tr>
 <tr class="memdesc:ab9fc5f2ec8a74c25149e8fe4a33f724c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe <a class="el" href="class_game.html" title="Classe base abstrata que representa um jogo genérico.">Game</a>.  <br /></td></tr>
 <tr class="separator:ab9fc5f2ec8a74c25149e8fe4a33f724c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0556d428e8db075b405355af7e81dae" id="r_ab0556d428e8db075b405355af7e81dae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0556d428e8db075b405355af7e81dae">~Game</a> ()=default</td></tr>
-<tr class="memdesc:ab0556d428e8db075b405355af7e81dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual padrão.  <br /></td></tr>
+<tr class="memitem:ab0556d428e8db075b405355af7e81dae" id="r_ab0556d428e8db075b405355af7e81dae"><td class="memItemLeft" align="right" valign="top"><a id="ab0556d428e8db075b405355af7e81dae" name="ab0556d428e8db075b405355af7e81dae"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Game</b> ()=default</td></tr>
+<tr class="memdesc:ab0556d428e8db075b405355af7e81dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual padrão. <br /></td></tr>
 <tr class="separator:ab0556d428e8db075b405355af7e81dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a1b5a5eb2afe2a96c466bc495d994b" id="r_aa9a1b5a5eb2afe2a96c466bc495d994b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a1b5a5eb2afe2a96c466bc495d994b">printBoard</a> () const</td></tr>
 <tr class="memdesc:aa9a1b5a5eb2afe2a96c466bc495d994b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o estado atual do tabuleiro.  <br /></td></tr>
@@ -166,33 +176,6 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab0556d428e8db075b405355af7e81dae" name="ab0556d428e8db075b405355af7e81dae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0556d428e8db075b405355af7e81dae">&#9670;&#160;</a></span>~Game()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Game::~Game </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destrutor virtual padrão. </p>
 
 </div>
 </div>
@@ -265,7 +248,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">ConnectFour</a>, <a class="el" href="class_reversi.html#ae676a0416b0daf14e1716accc2cd5675">Reversi</a>, <a class="el" href="class_test_game.html#a45f8f6eba6ca3dcb9e8b93f0f6017c81">TestGame</a>, and <a class="el" href="class_tic_tac_toe.html#aae47031606d060cdae7210ddd8ac4643">TicTacToe</a>.</p>
+<p>Implemented in <a class="el" href="class_connect_four.html#a08eb089373c0eea8510eb1fc6e1e36ee">ConnectFour</a>, <a class="el" href="class_reversi.html#ae676a0416b0daf14e1716accc2cd5675">Reversi</a>, and <a class="el" href="class_tic_tac_toe.html#aae47031606d060cdae7210ddd8ac4643">TicTacToe</a>.</p>
 
 </div>
 </div>
@@ -370,7 +353,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ProjetoFinal-main/include/<a class="el" href="_game_8hpp_source.html">Game.hpp</a></li>
-<li>ProjetoFinal-main/src/<a class="el" href="_game_8cpp.html">Game.cpp</a></li>
+<li>ProjetoFinal-main/src/<b>Game.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

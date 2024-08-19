@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ProjetoFinal: ProjetoFinal-main/tests/testGameBoardClass.cpp File Reference</title>
+<title>Jogos de Tabuleiro: ProjetoFinal-main/tests/testGameBoardClass.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="capivara.png"/></td>
   <td id="projectalign">
-   <div id="projectname">ProjetoFinal
+   <div id="projectname">Jogos de Tabuleiro
    </div>
-   <div id="projectbrief">Projeto da Disciplina Programação é Desenvolvimento de Sotware 2</div>
+   <div id="projectbrief">Projeto da Disciplina Programação Desenvolvimento de Software 2</div>
   </td>
  </tr>
  </tbody>
@@ -99,15 +99,10 @@ $(function(){ initResizable(false); });
 
 <p>Testes para a classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a> utilizando a biblioteca doctest.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="_game_board_8hpp_source.html">GameBoard.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_player_8hpp_source.html">Player.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;doctest.h&gt;</code><br />
+<code>#include &quot;GameBoard.hpp&quot;</code><br />
+<code>#include &quot;Player.hpp&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a623b8690a262536536a43eab2d7df03d" id="r_a623b8690a262536536a43eab2d7df03d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623b8690a262536536a43eab2d7df03d">DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</a></td></tr>
-<tr class="separator:a623b8690a262536536a43eab2d7df03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af7d6d69b24a30a13a773e60ce800ea12" id="r_af7d6d69b24a30a13a773e60ce800ea12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7d6d69b24a30a13a773e60ce800ea12">TEST_CASE</a> (&quot;Testing <a class="el" href="class_game_board.html">GameBoard</a> class&quot;)</td></tr>
@@ -119,33 +114,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a3365532faab94cf14cd7ebc337111d8b" id="r_a3365532faab94cf14cd7ebc337111d8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3365532faab94cf14cd7ebc337111d8b">TEST_CASE</a> (&quot;Test listStatistics method&quot;)</td></tr>
 <tr class="memdesc:a3365532faab94cf14cd7ebc337111d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa o método listStatistics da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>.  <br /></td></tr>
 <tr class="separator:a3365532faab94cf14cd7ebc337111d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8397c4fb396d8da3882ba94773c36b" id="r_a6b8397c4fb396d8da3882ba94773c36b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b8397c4fb396d8da3882ba94773c36b">TEST_CASE</a> (&quot;Test writePlayersToFile method&quot;)</td></tr>
-<tr class="memdesc:a6b8397c4fb396d8da3882ba94773c36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa o método writePlayersToFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>.  <br /></td></tr>
+<tr class="memitem:a6b8397c4fb396d8da3882ba94773c36b" id="r_a6b8397c4fb396d8da3882ba94773c36b"><td class="memItemLeft" align="right" valign="top"><a id="a6b8397c4fb396d8da3882ba94773c36b" name="a6b8397c4fb396d8da3882ba94773c36b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TEST_CASE</b> (&quot;Test writePlayersToFile method&quot;)</td></tr>
+<tr class="memdesc:a6b8397c4fb396d8da3882ba94773c36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa o método writePlayersToFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>. <br /></td></tr>
 <tr class="separator:a6b8397c4fb396d8da3882ba94773c36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373d2f49a033ffea5ca469ec91c53be4" id="r_a373d2f49a033ffea5ca469ec91c53be4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373d2f49a033ffea5ca469ec91c53be4">TEST_CASE</a> (&quot;Test readPlayersFromFile method&quot;)</td></tr>
-<tr class="memdesc:a373d2f49a033ffea5ca469ec91c53be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa o método readPlayersFromFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>.  <br /></td></tr>
+<tr class="memitem:a373d2f49a033ffea5ca469ec91c53be4" id="r_a373d2f49a033ffea5ca469ec91c53be4"><td class="memItemLeft" align="right" valign="top"><a id="a373d2f49a033ffea5ca469ec91c53be4" name="a373d2f49a033ffea5ca469ec91c53be4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TEST_CASE</b> (&quot;Test readPlayersFromFile method&quot;)</td></tr>
+<tr class="memdesc:a373d2f49a033ffea5ca469ec91c53be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testa o método readPlayersFromFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>. <br /></td></tr>
 <tr class="separator:a373d2f49a033ffea5ca469ec91c53be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Testes para a classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a> utilizando a biblioteca doctest. </p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a623b8690a262536536a43eab2d7df03d" name="a623b8690a262536536a43eab2d7df03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623b8690a262536536a43eab2d7df03d">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a1573babf8c1194dcd7e31ec036381497" name="a1573babf8c1194dcd7e31ec036381497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1573babf8c1194dcd7e31ec036381497">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1573babf8c1194dcd7e31ec036381497">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +148,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3365532faab94cf14cd7ebc337111d8b" name="a3365532faab94cf14cd7ebc337111d8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3365532faab94cf14cd7ebc337111d8b">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3365532faab94cf14cd7ebc337111d8b">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,46 +168,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a373d2f49a033ffea5ca469ec91c53be4" name="a373d2f49a033ffea5ca469ec91c53be4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a373d2f49a033ffea5ca469ec91c53be4">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Test readPlayersFromFile method&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Testa o método readPlayersFromFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>. </p>
-
-</div>
-</div>
-<a id="a6b8397c4fb396d8da3882ba94773c36b" name="a6b8397c4fb396d8da3882ba94773c36b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8397c4fb396d8da3882ba94773c36b">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;Test writePlayersToFile method&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Testa o método writePlayersToFile da classe <a class="el" href="class_game_board.html" title="Classe que gerencia o tabuleiro e os jogadores.">GameBoard</a>. </p>
-
-</div>
-</div>
 <a id="af7d6d69b24a30a13a773e60ce800ea12" name="af7d6d69b24a30a13a773e60ce800ea12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7d6d69b24a30a13a773e60ce800ea12">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d6d69b24a30a13a773e60ce800ea12">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

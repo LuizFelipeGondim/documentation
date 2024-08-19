@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['has_5finsertion_5foperator_0',['has_insertion_operator',['../structdoctest_1_1detail_1_1has__insertion__operator.html',1,'doctest::detail']]],
-  ['has_5finsertion_5foperator_3c_20t_2c_20decltype_28operator_3c_3c_28declval_3c_20std_3a_3aostream_20_26_20_3e_28_29_2c_20declval_3c_20const_20t_20_26_20_3e_28_29_29_2c_20void_28_29_29_3e_1',['has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;',['../structdoctest_1_1detail_1_1has__insertion__operator_3_01_t_00_01decltype_07operator_3_3_07declvab094f732977dc5a8a6181e0b8269a776.html',1,'doctest::detail']]],
-  ['help_2',['help',['../structdoctest_1_1_context_options.html#a9d542a95ee03f61c233fff51e7461400',1,'doctest::ContextOptions']]]
+  ['game_0',['Game',['../class_game.html',1,'Game'],['../class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game::Game()']]],
+  ['gameboard_1',['GameBoard',['../class_game_board.html',1,'GameBoard'],['../class_game_board.html#ac622cadcc81b3ffb71d8feb4506c04ac',1,'GameBoard::GameBoard()']]],
+  ['getboardcontent_2',['getBoardContent',['../class_reversi.html#a048927faec43f66f8ea42db31c9619c5',1,'Reversi']]],
+  ['getdefeats_3',['getDefeats',['../class_player.html#a85feae63a0d93aa5bc0ab0a2e464e717',1,'Player']]],
+  ['getname_4',['getName',['../class_player.html#a73e4ff2d70e62ca7e3be1d9b4ad9de85',1,'Player']]],
+  ['getnickname_5',['getNickName',['../class_player.html#a159d90439ced630ea6b199f7a7353f07',1,'Player']]],
+  ['getnumberofplayers_6',['getNumberOfPlayers',['../class_game_board.html#a9047f818e282e1f11814f673b4557089',1,'GameBoard']]],
+  ['getplayernickname_7',['getPlayerNickName',['../class_game_board.html#a61bdd93bf7f9b7039e5b1d7055b61017',1,'GameBoard']]],
+  ['getvictories_8',['getVictories',['../class_player.html#ad7a196c66b6a891cf008d5cac2c6adbb',1,'Player']]]
 ];
