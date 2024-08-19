@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['game_0',['Game',['../class_game.html',1,'Game'],['../class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game::Game()']]],
+  ['game_2ecpp_1',['Game.cpp',['../_game_8cpp.html',1,'']]],
+  ['game_2ehpp_2',['Game.hpp',['../_game_8hpp.html',1,'']]],
+  ['gameboard_3',['GameBoard',['../class_game_board.html',1,'GameBoard'],['../class_game_board.html#ac622cadcc81b3ffb71d8feb4506c04ac',1,'GameBoard::GameBoard()']]],
+  ['gameboard_2ecpp_4',['GameBoard.cpp',['../_game_board_8cpp.html',1,'']]],
+  ['gameboard_2ehpp_5',['GameBoard.hpp',['../_game_board_8hpp.html',1,'']]],
+  ['ge_6',['ge',['../namespacedoctest_1_1detail_1_1binary_assert_comparison.html#a2117cafa5b007d26f2e0988f3a081569a1de9460fcfb6a1681f13d54083f88313',1,'doctest::detail::binaryAssertComparison']]],
+  ['get_5factive_5fcontexts_7',['get_active_contexts',['../structdoctest_1_1_i_reporter.html#ad34f2f1954ff43b6e8fe2dc595cec53a',1,'doctest::IReporter']]],
+  ['get_5fnum_5factive_5fcontexts_8',['get_num_active_contexts',['../structdoctest_1_1_i_reporter.html#a7d520de46d9104c0eeb02375fabad32d',1,'doctest::IReporter']]],
+  ['get_5fnum_5fstringified_5fcontexts_9',['get_num_stringified_contexts',['../structdoctest_1_1_i_reporter.html#ac8b96fef046edc609a3374a61b84797d',1,'doctest::IReporter']]],
+  ['get_5fstringified_5fcontexts_10',['get_stringified_contexts',['../structdoctest_1_1_i_reporter.html#a6db31e528efe08c9bc9b4037a2143c3a',1,'doctest::IReporter']]],
+  ['getboardcontent_11',['getBoardContent',['../class_reversi.html#a048927faec43f66f8ea42db31c9619c5',1,'Reversi::getBoardContent()'],['../class_test_game.html#afa33506bdaa51aeb87a0965abe0ceb7b',1,'TestGame::getBoardContent()']]],
+  ['getcontextoptions_12',['getContextOptions',['../namespacedoctest.html#a13c02a469cfc2264d547fc0fc3a55569',1,'doctest']]],
+  ['getcurrenttestsuite_13',['getCurrentTestSuite',['../namespacedoctest__detail__test__suite__ns.html#a63d04c2e0ba35dff1e33cf0a24ec66c8',1,'doctest_detail_test_suite_ns']]],
+  ['getdefeats_14',['getDefeats',['../class_player.html#a85feae63a0d93aa5bc0ab0a2e464e717',1,'Player']]],
+  ['getname_15',['getName',['../class_player.html#a73e4ff2d70e62ca7e3be1d9b4ad9de85',1,'Player']]],
+  ['getnickname_16',['getNickName',['../class_player.html#a159d90439ced630ea6b199f7a7353f07',1,'Player']]],
+  ['getnumberofplayers_17',['getNumberOfPlayers',['../class_game_board.html#a9047f818e282e1f11814f673b4557089',1,'GameBoard']]],
+  ['getplayernickname_18',['getPlayerNickName',['../class_game_board.html#a61bdd93bf7f9b7039e5b1d7055b61017',1,'GameBoard']]],
+  ['getvictories_19',['getVictories',['../class_player.html#ad7a196c66b6a891cf008d5cac2c6adbb',1,'Player']]],
+  ['given_20',['GIVEN',['../doctest_8h.html#a6fdd23caff3293146ba6929b2d77465a',1,'doctest.h']]],
+  ['gnu_5ffile_5fline_21',['gnu_file_line',['../structdoctest_1_1_context_options.html#aab894e731a6fc86cf095288ec7d0c0f2',1,'doctest::ContextOptions']]],
+  ['green_22',['Green',['../namespacedoctest_1_1_color.html#a32e9eaf6013139846e848af6e6cf2b92a11e251a01549ffbc0993c769e787c6ae',1,'doctest::Color']]],
+  ['grey_23',['Grey',['../namespacedoctest_1_1_color.html#a32e9eaf6013139846e848af6e6cf2b92aa2a431a059ed0e85160db8967c8ace58',1,'doctest::Color']]],
+  ['gt_24',['gt',['../namespacedoctest_1_1detail_1_1binary_assert_comparison.html#a2117cafa5b007d26f2e0988f3a081569a3efb665f41cd9490d9739e1ad228918e',1,'doctest::detail::binaryAssertComparison']]]
+];
